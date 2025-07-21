@@ -1,0 +1,89 @@
+/* 基本的なフォントと背景色 */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8; /* 明るい青灰色の背景 */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* セクションタイトルの下線アニメーション */
+.section-title {
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #ffc107; /* アンバーのアクセントカラー */
+    border-radius: 2px;
+    transition: width 0.3s ease-in-out; /* ホバー時の幅変化アニメーション */
+}
+.section-title:hover::after {
+    width: 100px; /* ホバー時に下線を長くする */
+}
+
+/* ナビゲーションリンクのスタイル */
+nav a {
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease-in-out;
+}
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fcd34d; /* 黄色の下線 */
+    transition: width 0.3s ease-in-out;
+}
+nav a:hover::after {
+    width: 100%;
+}
+
+/* カード要素のホバーエフェクト */
+.grid > div {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.grid > div:hover {
+    transform: translateY(-5px); /* 少し上に移動 */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* 影を強調 */
+}
+
+/* ボタンのスタイル（例として追加、現在のHTMLにはボタンはありませんが、将来のために） */
+.btn-primary {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #3b82f6; /* Blue-500 */
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.btn-primary:hover {
+    background-color: #2563eb; /* Blue-600 */
+    transform: translateY(-2px);
+}
+.btn-primary:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* 画像のスタイル */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* 余分なスペースを削除 */
+}
