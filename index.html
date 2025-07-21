@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>トイ・ストーリーの魅力</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #333;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 4px;
+            background-color: #ffc107; /* Amber accent */
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="min-h-screen flex flex-col items-center">
+        <!-- Header -->
+        <header class="w-full bg-blue-700 text-white shadow-lg py-6 px-4 sm:px-6 lg:px-8 rounded-b-lg">
+            <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+                <h1 class="text-4xl font-extrabold mb-2 sm:mb-0">トイ・ストーリーの魅力</h1>
+                <nav>
+                    <ul class="flex space-x-4">
+                        <li><a href="#introduction" class="hover:text-yellow-300 transition duration-300">はじめに</a></li>
+                        <li><a href="#characters" class="hover:text-yellow-300 transition duration-300">キャラクター</a></li>
+                        <li><a href="#themes" class="hover:text-yellow-300 transition duration-300">テーマ</a></li>
+                        <li><a href="#why-love" class="hover:text-yellow-300 transition duration-300">愛される理由</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-grow">
+            <!-- Introduction Section -->
+            <section id="introduction" class="bg-white p-8 rounded-lg shadow-xl mb-12">
+                <h2 class="text-3xl font-bold text-blue-800 section-title">はじめに</h2>
+                <p class="text-lg leading-relaxed mb-6">
+                    「トイ・ストーリー」は、ピクサー・アニメーション・スタジオが制作した、世界中で愛される画期的なアニメーション映画シリーズです。
+                    1995年に公開された第1作は、フルCGアニメーション映画として史上初めて制作され、映画史にその名を刻みました。
+                    おもちゃたちが人間が見ていないところで生き生きと動き出すというユニークな設定は、子供から大人まで多くの人々の心を掴んで離しません。
+                </p>
+                <div class="flex justify-center">
+                    <img src="https://placehold.co/600x350/AEC6CF/FFFFFF?text=Toy+Story+Introduction" alt="トイ・ストーリーの紹介画像" class="rounded-lg shadow-md w-full md:w-3/4 lg:w-2/3">
+                </div>
+            </section>
+
+            <!-- Characters Section -->
+            <section id="characters" class="bg-white p-8 rounded-lg shadow-xl mb-12">
+                <h2 class="text-3xl font-bold text-blue-800 section-title">魅力的なキャラクターたち</h2>
+                <p class="text-lg leading-relaxed mb-6">
+                    「トイ・ストーリー」の最大の魅力の一つは、その個性豊かで愛らしいキャラクターたちです。彼らの友情、葛藤、成長の物語は、観客を深く引き込みます。
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                        <img src="https://placehold.co/150x150/FFD700/000000?text=Woody" alt="ウッディの画像" class="w-32 h-32 rounded-full mb-4 object-cover border-4 border-yellow-500">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">ウッディ</h3>
+                        <p class="text-md text-gray-700">アンディのお気に入りのおもちゃであるカウボーイ人形。忠誠心が強く、仲間思いのリーダー的存在です。</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                        <img src="https://placehold.co/150x150/008080/FFFFFF?text=Buzz" alt="バズの画像" class="w-32 h-32 rounded-full mb-4 object-cover border-4 border-teal-500">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">バズ・ライトイヤー</h3>
+                        <p class="text-md text-gray-700">宇宙のレンジャーを自称するアクションフィギュア。当初は自分が本物の宇宙飛行士だと信じていましたが、ウッディとの出会いを通じて成長します。</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                        <img src="https://placehold.co/150x150/FF6347/FFFFFF?text=Jessie" alt="ジェシーの画像" class="w-32 h-32 rounded-full mb-4 object-cover border-4 border-red-500">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">ジェシー</h3>
+                        <p class="text-md text-gray-700">元気いっぱいのカウガール人形。過去の寂しい経験から、仲間との絆を大切にするようになります。</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                        <img src="https://placehold.co/150x150/808080/FFFFFF?text=Potato+Head" alt="ミスター・ポテトヘッドの画像" class="w-32 h-32 rounded-full mb-4 object-cover border-4 border-gray-500">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">ミスター・ポテトヘッド</h3>
+                        <p class="text-md text-gray-700">皮肉屋だが、根は優しいポテト型のおもちゃ。ユーモラスなセリフで場を和ませます。</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                        <img src="https://placehold.co/150x150/90EE90/000000?text=Rex" alt="レックスの画像" class="w-32 h-32 rounded-full mb-4 object-cover border-4 border-green-500">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">レックス</h3>
+                        <p class="text-md text-gray-700">臆病なティラノサウルスのおもちゃ。見た目とは裏腹に、繊細で心優しい性格です。</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                        <img src="https://placehold.co/150x150/ADD8E6/000000?text=Slinky" alt="スリンキー・ドッグの画像" class="w-32 h-32 rounded-full mb-4 object-cover border-4 border-blue-300">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">スリンキー・ドッグ</h3>
+                        <p class="text-md text-gray-700">ウッディの親友であるバネの犬のおもちゃ。常にウッディを信頼し、支えます。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Themes Section -->
+            <section id="themes" class="bg-white p-8 rounded-lg shadow-xl mb-12">
+                <h2 class="text-3xl font-bold text-blue-800 section-title">普遍的なテーマ</h2>
+                <p class="text-lg leading-relaxed mb-6">
+                    「トイ・ストーリー」シリーズは、単なる子供向けアニメーションにとどまらず、大人も深く考えさせられる普遍的なテーマを扱っています。
+                </p>
+                <ul class="list-disc list-inside space-y-4 text-lg leading-relaxed ml-4">
+                    <li>
+                        <strong>友情と忠誠心:</strong> ウッディとバズの関係を中心に、おもちゃたちの間に育まれる深い友情と、持ち主への揺るぎない忠誠心が描かれています。
+                    </li>
+                    <li>
+                        <strong>変化と受け入れ:</strong> 子供の成長に伴うおもちゃたちの役割の変化や、新しい環境への適応、そして別れを受け入れることの難しさと大切さがテーマとなっています。
+                    </li>
+                    <li>
+                        <strong>存在意義と目的:</strong> おもちゃたちが「持ち主に愛されること」を自らの存在意義とし、その目的を果たすために奮闘する姿は、私たち自身の人生における目的意識にも通じます。
+                    </li>
+                    <li>
+                        <strong>チームワークと協力:</strong> 困難な状況に直面したとき、おもちゃたちがそれぞれの特技を活かし、協力し合うことで問題を解決していく姿は、チームワークの重要性を教えてくれます。
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Why Love Section -->
+            <section id="why-love" class="bg-white p-8 rounded-lg shadow-xl">
+                <h2 class="text-3xl font-bold text-blue-800 section-title">なぜこれほど愛されるのか？</h2>
+                <p class="text-lg leading-relaxed mb-6">
+                    「トイ・ストーリー」が世界中でこれほどまでに愛され続ける理由は多岐にわたります。
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">革新的なアニメーション</h3>
+                        <p class="text-md text-gray-700">
+                            フルCGアニメーションの先駆けとして、その映像技術は常に進化し続けています。おもちゃたちの質感、動き、表情は驚くほどリアルで、観客を物語の世界に引き込みます。
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">心温まるストーリー</h3>
+                        <p class="text-md text-gray-700">
+                            笑いあり、涙ありの感動的なストーリーは、年齢を問わず人々の心を打ちます。特に、子供時代の終わりや大切なものとの別れを描いたシーンは、多くの大人の共感を呼びました。
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">普遍的なメッセージ</h3>
+                        <p class="text-md text-gray-700">
+                            友情、成長、変化の受け入れといった普遍的なテーマは、文化や世代を超えて人々に響きます。おもちゃたちの視点から描かれる物語は、私たち自身の人生を振り返るきっかけを与えてくれます。
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">ユーモアと冒険</h3>
+                        <p class="text-md text-gray-700">
+                            キャラクターたちのコミカルなやり取りや、ハラハラドキドキの冒険は、観客を飽きさせません。子供たちは純粋に冒険を楽しみ、大人はその中に隠されたメッセージを見出します。
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="w-full bg-blue-700 text-white py-6 px-4 sm:px-6 lg:px-8 mt-12 rounded-t-lg">
+            <div class="container mx-auto text-center text-sm">
+                <p>&copy; 2025 トイ・ストーリーの魅力. All rights reserved.</p>
+                <p>このページは学習目的で作成されました。</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
